@@ -46,12 +46,12 @@ export default function AirportSecurityPage() {
       <section className={styles.hero} id="hero">
         <div className={styles.heroBg}>
           <Image
-            src="/airport_security_hero.png"
+            src="https://assets.cdn.filesafe.space/ApWkZ2IFXdvkS2AT3Tqg/media/6a4ec5014fbc0a8906402580.webp"
             alt="Secure Guard security officer standing in front of an airport terminal runway at twilight"
             fill
             className={styles.heroBgImg}
             priority
-            quality={90}
+            unoptimized
           />
           <div className={styles.heroOverlay} />
         </div>
@@ -138,12 +138,13 @@ export default function AirportSecurityPage() {
           <div className={styles.addonGrid}>
             <div className={styles.addonImageCol}>
               <Image 
-                src="/airport_security_patrol.png" 
+                src="https://assets.cdn.filesafe.space/ApWkZ2IFXdvkS2AT3Tqg/media/6a4ec501ac2f159bb07d1680.webp" 
                 alt="Secure Guard officer patrolling airport facility cargo hangar boundary" 
                 width={600} 
                 height={500} 
                 className={styles.addonImage} 
                 style={{ objectFit: 'cover' }}
+                unoptimized
               />
             </div>
             <div className={styles.addonContent}>
