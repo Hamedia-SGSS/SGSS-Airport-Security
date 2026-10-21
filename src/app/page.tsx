@@ -6,16 +6,16 @@ import { PreFooterCTA } from "@/components/PreFooterCTA";
 
 // Reusable icons for situations and fits
 const situations = [
-  { icon: "🛂", title: "Restricted Area Access", desc: "Verifying credentials and authorizations for restricted gates, runways, and sensitive administrative zones." },
+  { icon: "🛂", title: "Restricted Area Access", desc: "Verifying credentials at client-authorized access points; security-sensitive areas and runways are supported only when separately authorized and appropriately credentialed." },
   { icon: "📝", title: "Vendor & Employee Check-in", desc: "Checking badges and logging airport-adjacent business employees, delivery trucks, and operations staff." },
-  { icon: "🅿️", title: "Parking Lot Monitoring", desc: "Conducting continuous vehicle patrols around airport parking complexes to prevent auto-theft and vandalism." },
+  { icon: "🅿️", title: "Parking Lot Monitoring", desc: "Conducting visible patrols to help deter vehicle theft and vandalism, with prompt incident reporting." },
   { icon: "🚶", title: "Passenger Flow Support", desc: "Assisting with crowd direction and queue management during peak flight schedules and travel seasons." },
   { icon: "📦", title: "Unattended Items", desc: "Quickly identifying, reporting, and securing areas with unattended luggage or packages per protocol." },
-  { icon: "🔍", title: "Suspicious Activity", desc: "Monitoring boundaries and reporting unauthorized photography, loitering, or security breaches." },
-  { icon: "🚧", title: "Perimeter Concerns", desc: "Conducting regular fencing inspections and gate monitoring to prevent trespassers from entering runway-adjacent fields." },
-  { icon: "🚢", title: "Cargo Area Monitoring", desc: "Securing shipping bays, loading docks, and air cargo warehousing facilities holding valuable goods." },
+  { icon: "🔍", title: "Suspicious Activity", desc: "Reporting behavior that violates specific site rules or presents an observable safety concern, without implying photography alone is unlawful." },
+  { icon: "🚧", title: "Perimeter Concerns", desc: "Conducting regular fencing inspections and gate monitoring to help deter trespassers from entering restricted perimeters." },
+  { icon: "🚢", title: "Cargo Area Monitoring", desc: "Monitoring shipping bays, loading docks, and air cargo warehousing facilities holding valuable goods." },
   { icon: "🚌", title: "Transportation Issues", desc: "Assisting transit buses, taxis, rideshares, and shuttle services with designated pickup and drop-off flow." },
-  { icon: "🔒", title: "After-Hours Facility Patrol", desc: "Ensuring airport-connected retail, dining, and storage facilities remain locked and secure during off-hours." },
+  { icon: "🔒", title: "After-Hours Facility Patrol", desc: "Checking that airport-connected retail, dining, and storage facilities remain locked and monitored during off-hours." },
 ];
 
 const properties = [
@@ -30,10 +30,10 @@ const properties = [
 ];
 
 const coverageOptions = [
-  { service: "Day & Peak Travel Operations", schedule: "Flexible Daytime Hours", desc: "Managing access control, supporting passenger flow, and coordinating vendor deliveries." },
-  { service: "Overnight & After-Hours Security", schedule: "6 PM - 6 AM Daily", desc: "Perimeter fence inspections, locking up unused facilities, and monitoring cargo areas." },
-  { service: "24/7 Terminal & Parking Patrols", schedule: "Continuous Focus", desc: "Constant physical sweeps of parking lots, shuttle loops, and terminal entryways." },
-  { service: "Operations & Incident Response", schedule: "On-Call / On-Duty", desc: "Immediate assessment and escalation of unattended items, suspicious activities, or alarm triggers." },
+  { service: "Day & Peak Travel Operations", schedule: "Sample: Daytime Hours", desc: "Managing access control, supporting passenger flow, and coordinating vendor deliveries as defined in the facility agreement." },
+  { service: "Overnight & After-Hours Security", schedule: "Sample: 6 PM - 6 AM", desc: "Perimeter fence inspections, checking unused facilities, and monitoring cargo areas (hours and staffing are determined by the facility agreement)." },
+  { service: "24/7 Terminal & Parking Patrols", schedule: "Sample / By Agreement", desc: "Scheduled patrols during contracted coverage hours, with routes and frequency defined in the site post orders." },
+  { service: "Operations & Incident Response", schedule: "On-Duty / Contracted", desc: "Prompt observation, reporting, and escalation of unattended items, suspicious activities, or alarm triggers per site protocol." },
 ];
 
 export default function AirportSecurityPage() {
@@ -65,7 +65,7 @@ export default function AirportSecurityPage() {
               Support Safe Movement, Access Control, <span className={styles.heroTitleAccent}>and Security Around High-Traffic Airport Areas</span>
             </h1>
             <p className={styles.heroSubtitle}>
-              Secure Guard provides airport-related security support for access control, perimeter monitoring, parking areas, employee entrances, vendor check-in, passenger flow support, facility patrols, and incident reporting.
+              Secure Guard provides security support for airport-adjacent commercial property, parking, cargo, and terminal support only where SGSS is authorized to operate—including access control, perimeter monitoring, vendor check-in, passenger flow support, facility patrols, and incident reporting.
             </p>
             <div className={styles.heroCtas}>
               <a 
@@ -113,7 +113,7 @@ export default function AirportSecurityPage() {
             <div className={styles.whyCards}>
               {[
                 { icon: "🛂", title: "Restricted Access Control", desc: "Managing secure boundaries, employee badges, and authorized personnel zones without causing operations bottlenecks." },
-                { icon: "🚶", title: "High-Traffic Crowd Flow", desc: "Guiding dense passenger crowds, shuttle bus queues, and handling transit hubs during peak travel periods." },
+                { icon: "🚶", title: "High-Traffic Crowd Flow", desc: "Supporting queue management and passenger movement in designated areas under airport-operator instructions." },
                 { icon: "📦", title: "Unattended Baggage", desc: "Managing risks from unattended luggage, vendor parcels, or suspicious cargo items through strict reporting procedures." },
                 { icon: "🚧", title: "Vast Perimeter Patrols", desc: "Inspecting outer fences, parking areas, cargo facilities, and hangar entrances against trespassers." },
               ].map((c) => (
@@ -153,10 +153,10 @@ export default function AirportSecurityPage() {
                 Visible Patrols & <span className={styles.titleAccent}>Airport-Adjacent Security Support</span>
               </h2>
               <p className={styles.bodyText}>
-                Secure Guard provides airport-related security support for access control, perimeter monitoring, parking areas, employee entrances, vendor check-in, passenger flow support, facility patrols, and incident reporting.
+                Secure Guard provides security support for airport-adjacent commercial property, parking, cargo, and terminal support only where SGSS is authorized to operate, covering access control, perimeter monitoring, employee entrances, vendor check-in, facility patrols, and incident reporting.
               </p>
               <p className={styles.bodyText}>
-                Our team can support airport-adjacent facilities, transportation areas, cargo operations, private terminals, parking operations, and commercial properties connected to airport activity.
+                Our team can support airport-adjacent facilities, transportation areas, cargo operations, private terminals, parking operations, and commercial properties connected to airport activity, with standing guards, mobile patrols, and specialized duties scoped per your service agreement.
               </p>
             </div>
           </div>
@@ -173,7 +173,7 @@ export default function AirportSecurityPage() {
             </h2>
           </div>
           <p className={styles.bodyTextCenteredLight}>
-            Our security presence can be tailored to match the unique schedules and peak travel hours of your facilities. We offer continuous day, night, and peak travel coverage options.
+            Sample schedules are shown below; actual coverage hours, patrol routes, and staffing levels are determined by your facility&apos;s service agreement.
           </p>
 
           {/* Coverage Options Table */}
@@ -212,7 +212,7 @@ export default function AirportSecurityPage() {
                 What This Means <span className={styles.titleAccentGold}>for the Client</span>
               </h2>
               <p className={styles.bodyTextLight}>
-                By deploying Secure Guard, you gain a dedicated security partner committed to optimizing passenger safety, minimizing trespasser risks, and supporting terminal operations.
+                By deploying Secure Guard, you gain a dedicated security partner focused on supporting passenger movement, deterring trespasser activity, and reporting operational incidents promptly.
               </p>
             </div>
             <div className={styles.opsFeatures}>
